@@ -15,8 +15,8 @@ This project was created in Node.js and express.
 If the steps were executed correctly. you can use the following functionalities.
 
 - Register users in the system.
-- login to the system
-- after logged in you can: 
+- Login to the system
+## After logged in you can: 
 - Get the public videos
 - Create a private video
 - Get all private videos
@@ -25,3 +25,8 @@ If the steps were executed correctly. you can use the following functionalities.
 - Delete a private video
 - Give like to a public video
 - Get all videos that you liked
+# Api's Usage
+- First, register users in the system. Use the next endpoint: localhost:port/api/users/
+  ![img](http://imgur.com/a/Q6YGBpB)
+- Second, login to the system. Then copy the token that Api returned. Use the next endpoint: localhost:port/api/users/login
+- Then, in every endpoint, you must pass In the headers  the token as Authorization.
